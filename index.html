@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Imc (personalProject) </title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+    <section class="container">
+        <div class="apresentacao">
+        <p>
+            <h1> Cálculo de IMC </h1>
+            
+            O Índice de Massa Corporal (IMC) é uma medida que avalia a 
+            relação entre peso e altura, proporcionando uma indicação 
+            geral sobre a composição corporal e potencial risco à saúde.
+        </p>
+        </div>
+        <div class="informacao">
+            <table  class="tabela">
+                <tr class="tituloTabela">
+                    <th>IMC</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td>Menos do que 18,5</td>
+                    <td>Abaixo do Peso</td>
+                </tr>
+                <tr>
+                    <td>Entre 18,5 e 24,9</td>
+                    <td>Peso Normal</td>
+                </tr>
+                <tr>
+                    <td>Entre 25  e 29,9</td>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td>Entre 30 e 34,9</td>
+                    <td>Obesidade Grau 1</td>
+                </tr>
+                <tr>
+                    <td>Entre 35 e 39,9</td>
+                    <td>Obesidade Grau 2</td>
+                </tr>
+                <tr>
+                    <td>Acima de 40</td>
+                    <td>Obesidade Grau 3</td>
+                </tr>
+            </table>
+        </div>
+        <form>
+
+            <div>
+            <label for="numeroPeso">Qual seu peso: </label>    
+            <input  id="numeroPeso" type="number"> 
+
+            <label for="numeroAltura">Qual sua altura: </label>
+            <input id="numeroAltura" type="text">
+            </div>
+
+            <div>
+            <button id="enviar" class="button">Enviar</button>
+            </div>
+            <div class="resultado" id="resultado"></div>
+
+        </form>
+
+    </section>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
